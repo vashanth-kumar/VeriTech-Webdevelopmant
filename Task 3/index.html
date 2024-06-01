@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXbxFf7WmHhTP7QO7GLVs5v4mLZ9tmUENs4cLJg/UEP2DJY77K4nGKeemxxU6RqQ5Gsy9O6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        <main>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <button type="submit"><i class="fas fa-plus"></i> Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </main>
+        <footer>
+            <p>&copy; 2024 To-Do App. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <textarea id="full-task-text" readonly></textarea>
+            <div class="modal-actions">
+                <button id="modal-complete-button">Complete</button>
+                <button id="modal-edit-button">Edit</button>
+                <button id="modal-delete-button">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
