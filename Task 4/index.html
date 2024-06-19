@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="assets/images/profile.png" alt="Profile">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="assets/images/hero.jpg" alt="Hero Image">
+            <div class="hero-content">
+                <h1>Watch Now</h1>
+                <button>Play</button>
+            </div>
+        </section>
+
+        <section class="movies">
+            <h2>Trending Now</h2>
+            <div class="movie-container" id="trending-now">
+                <!-- Movies will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="movies">
+            <h2>Recommended For You</h2>
+            <div class="movie-container" id="recommended">
+                <!-- Movies will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
