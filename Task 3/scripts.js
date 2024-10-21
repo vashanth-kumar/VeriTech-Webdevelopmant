@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalEditButton = document.getElementById('modal-edit-button');
     const modalDeleteButton = document.getElementById('modal-delete-button');
 
-    
-
     let currentTaskIndex = null;
     let saveButton = null; // Reference to the save button
 
